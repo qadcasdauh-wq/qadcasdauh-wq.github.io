@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Cai Huangtao — Researcher &amp; Builder</title>
+<meta name="description" content="Personal site of Cai Huangtao: multi-agent systems research, quantitative trading, and AI engineering.">
+<style>
+  :root{
+    --ink:#1c2430; --soft:#5b6675; --line:#e3e7ee; --bg:#fbfcfe;
+    --card:#ffffff; --accent:#1f5fa8; --accent2:#0e7d6c; --gold:#a97b2f;
+    --serif:Georgia,"Times New Roman",serif;
+    --sans:-apple-system,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  body{font-family:var(--sans);color:var(--ink);background:var(--bg);line-height:1.6;font-size:16px}
+  a{color:var(--accent);text-decoration:none}
+  a:hover{text-decoration:underline}
+  .wrap{max-width:980px;margin:0 auto;padding:0 24px}
+  /* header */
+  header{padding:56px 0 28px;border-bottom:1px solid var(--line)}
+  .name{font-family:var(--serif);font-size:40px;letter-spacing:.06em;font-weight:700}
+  .tag{color:var(--soft);font-size:15px;margin-top:8px}
+  .interests{margin-top:14px;font-size:13.5px;color:var(--soft)}
+  .interests b{color:var(--ink)}
+  .chips{margin-top:14px;display:flex;flex-wrap:wrap;gap:8px}
+  .chip{font-size:12px;letter-spacing:.04em;padding:4px 10px;border:1px solid var(--line);border-radius:99px;background:#fff;color:var(--soft)}
+  .contact{font-size:13px;color:var(--soft);margin-top:10px}
+  .contact a{color:var(--accent)}
+  /* stats strip */
+  .stats{display:flex;flex-wrap:wrap;gap:14px;margin:26px 0 8px}
+  .stat{flex:1 1 200px;background:var(--card);border:1px solid var(--line);border-radius:10px;padding:14px 18px}
+  .stat .n{font-family:var(--serif);font-size:26px;color:var(--accent);font-weight:700}
+  .stat .l{font-size:12.5px;color:var(--soft);margin-top:2px}
+  /* sections */
+  section{margin:34px 0}
+  h2{font-family:var(--serif);font-size:21px;letter-spacing:.03em;margin-bottom:14px}
+  h2 span{color:var(--soft);font-size:12px;letter-spacing:.14em;text-transform:uppercase;display:block;margin-bottom:6px}
+  .entry{background:var(--card);border:1px solid var(--line);border-left:3px solid var(--accent);border-radius:8px;padding:16px 20px;margin:12px 0}
+  .entry h3{font-size:15.5px;margin:0}
+  .entry .meta{font-size:12.5px;color:var(--soft);margin:4px 0 8px}
+  .entry ul{margin:8px 0 0 4px;padding:0;list-style:none}
+  .entry li{position:relative;padding:3px 0 3px 16px;font-size:14px;color:#39424e}
+  .entry li:before{content:"•";position:absolute;left:0;color:var(--accent);font-size:11px}
+  .pub{border-left:3px solid var(--gold)}
+  .award{border-left:3px solid var(--accent2)}
+  .skills{background:var(--card);border:1px solid var(--line);border-radius:8px;padding:18px 22px;margin:12px 0}
+  .skills h3{font-size:14px;margin:0 0 6px}
+  .skills p{font-size:13.5px;color:#39424e;margin:2px 0 10px}
+  .grid{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+  @media(max-width:720px){.grid{grid-template-columns:1fr}.name{font-size:30px}}
+  footer{margin-top:44px;padding:22px 0;border-top:1px solid var(--line);font-size:12.5px;color:var(--soft)}
+  footer a{color:var(--accent)}
+  .top{position:sticky;top:0;background:rgba(251,252,254,.94);border-bottom:1px solid var(--line);padding:10px 0;z-index:9}
+  .top .wrap{padding:0 24px}
+  .top nav{font-size:13px;letter-spacing:.05em}
+  .top nav a{color:var(--soft);margin-right:18px}
+  .top nav a:hover{color:var(--accent)}
+</style>
+</head>
+<body>
+
+<div class="top wrap"><nav class="topnav">
+  <a href="#research">Research</a><a href="#experience">Experience</a><a href="#honors">Honors</a><a href="#skills">Skills</a><a href="#contact">Contact</a>
+</nav></div>
+
+<header class="wrap">
+  <div class="name">CAI&nbsp;HUANGTAO</div>
+  <div class="tag">Researcher · Scientific Computing Engineer · AI Systems Builder</div>
+  <div class="interests"><b>Research interests:</b> Applied Mathematics · Multi-Agent Systems · Scientific Computing · Data-Driven Modelling · Bayesian Inference · Time-Series Analysis · AI-Assisted Scientific Computing</div>
+  <div class="chips">
+    <span class="chip">Python</span><span class="chip">MATLAB</span><span class="chip">SQL</span><span class="chip">LaTeX</span><span class="chip">Git / GitHub</span><span class="chip">Linux</span><span class="chip">LLM Fine-tuning</span><span class="chip">Monte Carlo</span>
+  </div>
+  <div class="contact">
+    <a href="mailto:fy803621@student.reading.ac.uk">fy803621@student.reading.ac.uk</a> · +86 189 2149 0523
+  </div>
+</header>
+
+<div class="wrap">
+  <div class="stats">
+    <div class="stat"><div class="n">74%</div><div class="l">reduction in communication frequency (consensus experiments)</div></div>
+    <div class="stat"><div class="n">1,000+</div><div class="l">AI content tasks supported per day</div></div>
+    <div class="stat"><div class="n">Top 3%</div><div class="l">national dataset-assimilation recognition, 2024–25</div></div>
+  </div>
+
+  <section id="research">
+    <h2><span>Research</span>Publications &amp; Active Projects</h2>
+
+    <div class="entry pub">
+      <h3>Memory-Based Consensus in Complex Dynamical Networks With Switching Topologies and Adaptive Communication</h3>
+      <div class="meta">Ding, J., Leta, T. D., Melesse, W. G., Huang, S., Zhang, S., and Cai, H. — <i>Asian Journal of Control</i>, under review, 2026</div>
+    </div>
+
+    <div class="grid">
+      <div class="entry">
+        <h3>Memory-Based Consensus in Complex Multi-Agent Systems</h3>
+        <div class="meta">Feb 2026 – Present · Nanjing University of Information Science and Technology</div>
+        <ul>
+          <li>Formulated nonlinear multi-agent dynamical models for complex networks with switching topologies and constrained communication.</li>
+          <li>Developed a prescribed-time consensus control scheme with memory-based adaptive communication and an event-triggered mechanism.</li>
+          <li>Derived convergence conditions via Lyapunov–Krasovskii functionals and linear matrix inequalities.</li>
+          <li>Proved consensus within a predefined time horizon while excluding Zeno behaviour.</li>
+          <li>MATLAB simulations of topology switching, algebraic connectivity, communication frequency, convergence, and energy use.</li>
+          <li>~74% reduction in total communication frequency; up to 19% energy savings in numerical experiments.</li>
+        </ul>
+      </div>
+      <div class="entry">
+        <h3>Python-Based Quantitative Trading &amp; Backtesting System</h3>
+        <div class="meta">Dec 2025 – Present · Nanjing University of Information Science and Technology</div>
+        <ul>
+          <li>End-to-end Python framework for stock screening, strategy testing, and portfolio evaluation.</li>
+          <li>Automated A-share data collection and preprocessing via the AkShare API.</li>
+          <li>Data-cleaning and feature-screening pipelines for time-series and structured financial data.</li>
+          <li>Back-testing engine computing annualized returns, Sharpe ratios, and maximum drawdowns.</li>
+          <li>Monte Carlo simulation and numerical optimization for strategy robustness under market uncertainty.</li>
+          <li>Millisecond-level automated screening improving efficiency and reproducibility.</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section id="experience">
+    <h2><span>Professional Experience</span>Engineering Roles</h2>
+    <div class="grid">
+      <div class="entry">
+        <h3>Nanjing Shiyanzao Intelligent Technology Co., Ltd.</h3>
+        <div class="meta">Jul 2025 – Mar 2026 · Co-Founder &amp; Chief Technology Officer</div>
+        <ul>
+          <li>Led technical design of an AIGC-based automated content production system.</li>
+          <li>Deployed open-source LLMs (Llama, Qwen) on local servers for data privacy, rate limits, and cost control.</li>
+          <li>Model configuration, fine-tuning, inference testing, and deployment optimization.</li>
+          <li>AI Agent workflows on Coze and Dify: prompt engineering, RAG, Python automation.</li>
+          <li>Python scripts for data processing, API integration, task routing, and orchestration.</li>
+          <li>~80% shorter production cycle; 1,000+ tasks/day; ~40% lower computing and operating costs.</li>
+        </ul>
+      </div>
+      <div class="entry">
+        <h3>Shanghai Heta Technology Co., Ltd.</h3>
+        <div class="meta">Jul 2024 – Sep 2024 · Data Analyst Intern</div>
+        <ul>
+          <li>Cleaned, integrated, and analysed 100,000+ business data records with Python and SQL.</li>
+          <li>Feature extraction, exploratory analysis, hypothesis testing, and statistical evaluation.</li>
+          <li>Bayesian inference and Markov chain Monte Carlo for prediction and quantification.</li>
+          <li>Reports summarizing data patterns, model performance, and actionable findings.</li>
+          <li>~12% improvement in forecasting accuracy over the previous modelling approach.</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section id="honors">
+    <h2><span>Education &amp; Honors</span>Recognition</h2>
+    <div class="entry">
+      <h3>Joint Undergraduate Programme — Mathematics &amp; Applied Mathematics</h3>
+      <div class="meta">Nanjing University of Information Science and Technology (Double First-Class) &amp; University of Reading (UK) · Sep 2023 – Jun 2027 (expected)</div>
+      <ul>
+        <li>GPA 85/100 (Nanjing University of Information Science and Technology)</li>
+        <li>First Class Honors level (86) (University of Reading)</li>
+      </ul>
+    </div>
+    <div class="grid">
+      <div class="entry award"><h3>National / Provincial “Top Ten Most Valuable Annual Dataset”</h3><div class="meta">Data-assimilation achievement (Top 3%) · 2024–2025</div></div>
+      <div class="entry award"><h3>First-Class Scholarship</h3><div class="meta">Nanjing University (Top 10%) · 2024–2025</div></div>
+      <div class="entry award"><h3>Third-Class Scholarship</h3><div class="meta">Nanjing University · 2025–2026</div></div>
+      <div class="entry award"><h3>Outstanding Student Cadre</h3><div class="meta">Nanjing University (Top 5%) · 2024–2025</div></div>
+    </div>
+  </section>
+
+  <section id="skills">
+    <h2><span>Skills</span>Technical &amp; Language</h2>
+    <div class="skills">
+      <h3>Programming &amp; Data Analysis</h3>
+      <p>Python · MATLAB · SQL · C/C++ (basic) · NumPy · Pandas · Scikit-learn</p>
+      <h3>Mathematical &amp; Computational Methods</h3>
+      <p>Multi-agent system control · data assimilation · Bayesian inference · MCMC · time-series analysis · Monte Carlo simulation · numerical optimization · statistical hypothesis testing</p>
+      <h3>AI &amp; Large Language Models</h3>
+      <p>Local deployment and fine-tuning of open-source LLMs · retrieval-augmented generation · AI Agent workflow development · prompt engineering</p>
+      <h3>Tools</h3>
+      <p>Git/GitHub · Linux/Ubuntu · LaTeX · Markdown · Spyder · AkShare · Coze · Dify</p>
+      <h3>Language</h3>
+      <p>IELTS 6.5 overall — Listening 6.0 · Reading 7.5 · Speaking 5.0 · Writing 6.5</p>
+    </div>
+  </section>
+</div>
+
+<footer class="wrap">
+  Built from the CV of Cai Huangtao · hosted on GitHub Pages ·
+  <a href="https://github.com/qadcasdauh-wq/qadcasdauh-wq.github.io">source</a>
+</footer>
+
+</body>
+</html>
